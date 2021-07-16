@@ -1,0 +1,7 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\obj\Debug\Ejerciciobancoconsola.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\obj\Debug\Ejerciciobancoconsola.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\bin\Debug\Ejerciciobancoconsola.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\bin\Debug\Ejerciciobancoconsola.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\bin\Debug\Ejerciciobancoconsola.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\obj\Debug\Ejerciciobancoconsola.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\Ejerciciobancoconsola\Ejerciciobancoconsola\obj\Debug\Ejerciciobancoconsola.pdb
