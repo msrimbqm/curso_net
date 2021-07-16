@@ -1,0 +1,7 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\obj\Debug\EjercicioZooConsola.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\obj\Debug\EjercicioZooConsola.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\bin\Debug\EjercicioZooConsola.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\bin\Debug\EjercicioZooConsola.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\bin\Debug\EjercicioZooConsola.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\obj\Debug\EjercicioZooConsola.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\EjercicioZooConsola\EjercicioZooConsola\obj\Debug\EjercicioZooConsola.pdb
