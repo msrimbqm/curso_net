@@ -1,0 +1,10 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\bin\Debug\LinkQtoSP.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\bin\Debug\LinkQtoSP.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\bin\Debug\LinkQtoSP.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.GridDatos.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSP\LinkQtoSP\obj\Debug\LinkQtoSP.pdb

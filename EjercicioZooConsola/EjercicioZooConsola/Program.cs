@@ -17,9 +17,15 @@ namespace EjercicioZooConsola
             Insecto animal3 = new Insecto("Mosca","punetera",1,8,true);
 
             animal1.queClaseDeAnimalEres();
+          
+
+            Console.WriteLine();
             animal2.queClaseDeAnimalEres();
+            Console.WriteLine();
             animal3.queClaseDeAnimalEres();
+            Console.WriteLine();
             Console.ReadLine();
+
 
 
 

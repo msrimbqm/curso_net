@@ -1,0 +1,9 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\bin\Debug\LINKQ BANCO.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\bin\Debug\LINKQ BANCO.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\bin\Debug\LINKQ BANCO.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\obj\Debug\LINKQ_BANCO.BtnEliminar.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\obj\Debug\LINKQ_BANCO.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\obj\Debug\LINKQ BANCO.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\obj\Debug\LINKQ BANCO.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\obj\Debug\LINKQ BANCO.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LinkQtoSPbanco\LINKQ BANCO\LINKQ BANCO\obj\Debug\LINKQ BANCO.pdb

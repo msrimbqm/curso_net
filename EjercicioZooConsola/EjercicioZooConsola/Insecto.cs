@@ -38,6 +38,7 @@ namespace EjercicioZooConsola
             Console.WriteLine("de la especie:" + this.Especie);
             Console.WriteLine("Peso en Kg:" + this.Peso.ToString());
             Console.WriteLine("Estoy en la Jaula:" + this.Jaula.ToString());
+            Console.WriteLine("y respecto del vuelo: " + this.Vuela);
         }
 
 
