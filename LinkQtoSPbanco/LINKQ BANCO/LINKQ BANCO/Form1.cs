@@ -97,7 +97,6 @@ namespace LINKQ_BANCO
             if (txtBuscar.Text != "")
             {
 
-
                 if (CmbBuscar.SelectedItem.ToString() == "IDCliente")
                 {
                     // busco por codigo id
