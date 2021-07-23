@@ -126,7 +126,7 @@ namespace LINKQ_BANCO
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(398, 96);
+            this.BtnBuscar.Location = new System.Drawing.Point(416, 98);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(75, 23);
             this.BtnBuscar.TabIndex = 10;
@@ -138,7 +138,7 @@ namespace LINKQ_BANCO
             // 
             this.txtBuscar.Location = new System.Drawing.Point(136, 98);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(241, 20);
+            this.txtBuscar.Size = new System.Drawing.Size(274, 20);
             this.txtBuscar.TabIndex = 11;
             // 
             // CmbBuscar
@@ -160,12 +160,12 @@ namespace LINKQ_BANCO
             this.dataGridView1.Location = new System.Drawing.Point(24, 134);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(449, 309);
+            this.dataGridView1.Size = new System.Drawing.Size(547, 309);
             this.dataGridView1.TabIndex = 13;
             // 
             // BtnReset
             // 
-            this.BtnReset.Location = new System.Drawing.Point(398, 60);
+            this.BtnReset.Location = new System.Drawing.Point(497, 97);
             this.BtnReset.Name = "BtnReset";
             this.BtnReset.Size = new System.Drawing.Size(74, 24);
             this.BtnReset.TabIndex = 14;

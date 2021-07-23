@@ -1,22 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BancoBD" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=ASATA405\SQLEXPRESSMARCOS;Initial Catalog=BancoBD;User ID=sa" SettingsObjectName="LINKQ_BANCO.Properties.Settings" SettingsPropertyName="BancoBDConnectionString" Provider="System.Data.SqlClient" />
-  <Function Name="dbo.SPConsultaCuenta" Method="SPConsultaCuenta">
-    <Parameter Name="IdCuenta" Parameter="idCuenta" Type="System.String" DbType="VarChar(5)" />
-    <ElementType Name="SPConsultaCuentaResult">
-      <Column Name="IdCliente" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="Apellidos" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="Nombres" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="IdCuenta" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="IdCliente1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
-      <Column Name="Saldo" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Divisa" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="IdMovimiento" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
-      <Column Name="Idcuenta1" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
-      <Column Name="Tipo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="Monto" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="Fecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.SPEliminarCliente" Method="SPEliminarCliente">
     <Parameter Name="IdCliente" Parameter="idCliente" Type="System.String" DbType="VarChar(5)" />
     <Return Type="System.Int32" />
@@ -62,12 +45,6 @@
       <Column Name="IdCliente" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
       <Column Name="Apellidos" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="Nombres" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.SPDevolverID" Method="SPDevolverID">
-    <Parameter Name="cliente" Type="System.String" DbType="VarChar(30)" />
-    <ElementType Name="SPDevolverIDResult">
-      <Column Name="Idcliente" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
 </Database>

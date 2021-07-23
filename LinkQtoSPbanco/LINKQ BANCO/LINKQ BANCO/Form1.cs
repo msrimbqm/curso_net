@@ -14,7 +14,6 @@ namespace LINKQ_BANCO
     {
 
 
-
         // creo el objeto de la base de datos para acceder SQL
         DataClasses1DataContext ClienteLink = new DataClasses1DataContext();
 
@@ -32,6 +31,15 @@ namespace LINKQ_BANCO
 
         }
 
+        bool algovacio()
+        {
+            if ((txtIdCliente.Text=="") || (txtNombre.Text=="") || (txtApellidos.Text==""))
+                return true;
+            else
+                return false;
+
+        }
+
        
 
         public BtnEliminar()
@@ -40,7 +48,7 @@ namespace LINKQ_BANCO
         }
 
         private void BtnEliminar_Load(object sender, EventArgs e)
-        {
+        {// es el load del formulario aunque no lo parezca
             this.listar();
             CmbBuscar.SelectedIndex = 0;
         }
@@ -49,10 +57,12 @@ namespace LINKQ_BANCO
         { // try intenta y casca, si salta va el catch y da mensaje alerta sin hacerlo finalmente
             try
             {
+                if (!this.algovacio()) {
                     ClienteLink.SPInsertarCliente(txtIdCliente.Text, txtNombre.Text, txtApellidos.Text);
                     this.listar();
                     this.vaciar();
-                //fdad
+                }
+                
              } 
             catch
             {
@@ -63,13 +73,19 @@ namespace LINKQ_BANCO
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            ClienteLink.SPModificarCliente(txtIdCliente.Text, txtNombre.Text, txtApellidos.Text);
-            this.listar();
-            this.vaciar();
+            if (!this.algovacio())
+            {
+                ClienteLink.SPModificarCliente(txtIdCliente.Text, txtNombre.Text, txtApellidos.Text);
+                this.listar();
+                this.vaciar();
+            }
+            else
+            { MessageBox.Show("Falta algun campo"); }
         }
 
         private void BtnEli_Click(object sender, EventArgs e)
         {
+            
             ClienteLink.SPEliminarCliente(txtIdCliente.Text);
             this.listar();
             this.vaciar();
