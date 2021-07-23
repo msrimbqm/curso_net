@@ -94,7 +94,7 @@ namespace LINKQ_BANCO
                     // busco por codigo id
                     dataGridView1.DataSource = ClienteLink.SPBuscarporNombre(txtBuscar.Text);
                 }
-
+                //
                 if (CmbBuscar.SelectedItem.ToString() == "Apellidos")
                 {
                     // busco por codigo id
