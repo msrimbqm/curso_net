@@ -52,6 +52,7 @@ namespace LINKQ_BANCO
                     ClienteLink.SPInsertarCliente(txtIdCliente.Text, txtNombre.Text, txtApellidos.Text);
                     this.listar();
                     this.vaciar();
+                //fdad
              } 
             catch
             {
