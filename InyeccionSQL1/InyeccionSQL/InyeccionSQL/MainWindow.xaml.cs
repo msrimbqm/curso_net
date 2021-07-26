@@ -45,11 +45,135 @@ namespace InyeccionSQL
             MessageBox.Show("Los datos se guardaron correctamente");
             txtEdadInsertar.Text = "";
             txtNombreInsertar.Text = "";
-            txtIdInsertar.Text="";
+            txtIdInsertar.Text = "";
             conexion.Close();
+
+
+
+        }
+
+        private void btnConsulta_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+            string id = txtIdEliminar.Text;
+            string cadena = "select id, nombre, edad from Personas where id=" + id;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            try {
+                SqlDataReader registro = comando.ExecuteReader();
+                if (registro.Read())
+                {
+                    LabNombre.Content = registro["nombre"].ToString();
+                    LabEdad.Content = registro["edad"].ToString();
+                    btnBorrar.IsEnabled = true;
+                }
+                else 
+                {
+
+                    MessageBox.Show("No existe articulo con el codigo ingresado");
+                    
+                }
+
+            } // del try
+
+            catch
+            {
+                MessageBox.Show("Error producido al acceder base de datos");
+            }
+            conexion.Close();
+        }
+
+        private void btnBorrar_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+            string iden = txtIdEliminar.Text;
+            string cadena = "delete from Personas where id=" + iden;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            int cant;
+            cant = comando.ExecuteNonQuery();
+            if (cant == 1) {
+                LabNombre.Content = "";
+                LabEdad.Content = "";
+                MessageBox.Show("Articulo Borrado");
+            } else
+            {
+                MessageBox.Show("No existe un articulo con ese codigo");
+            }
+            conexion.Close();
+            btnBorrar.IsEnabled = false;
             
 
-        
+
+
+            
+
+                               
+        }
+
+        private void BtnBuscar_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+            string id = txtIdModificar.Text;
+            string cadena = "select id, nombre, edad from Personas where id=" + id;
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            try
+            {
+                SqlDataReader registro = comando.ExecuteReader();
+                if (registro.Read())
+                {
+                    txtNombreModificar.Text= registro["nombre"].ToString();
+                    txtEdadModificar.Text= registro["edad"].ToString();
+                    BtnModificar.IsEnabled = true;
+                }
+                else
+                {
+
+                    MessageBox.Show("No existe articulo con el codigo ingresado");
+
+                }
+
+            } // del try
+
+            catch
+            {
+                MessageBox.Show("Error producido al acceder base de datos");
+            }
+            conexion.Close();
+        }
+
+        private void BtnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            conexion.Open();
+
+            string id = txtIdModificar.Text;
+            string nombre = txtNombreModificar.Text;
+            string edad = txtEdadModificar.Text;
+
+            string cadena = "update Personas set nombre='" + nombre + "',edad=" + edad + " where id=" + id;
+            //MessageBox.Show(cadena);
+
+
+                           
+
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            int cant;
+            cant = comando.ExecuteNonQuery();
+            //MessageBox.Show(cant.ToString());
+            if (cant == 2)
+            {
+                txtEdadModificar.Text = "";
+                txtNombreModificar.Text = "";
+                txtIdModificar.Text = "";
+
+                
+                MessageBox.Show("Articulo Modificado");
+            }
+            else
+            {
+                MessageBox.Show("No existe un articulo con ese codigo");
+            }
+            conexion.Close();
+            BtnModificar.IsEnabled = false;
         }
     }
+
 }

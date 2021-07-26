@@ -18,18 +18,18 @@
         <StackPanel HorizontalAlignment="Left" Height="372" Margin="148,10,0,0" VerticalAlignment="Top" Width="161" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
             <Label Content="ELIMINAR" Margin="10,0,74,50"/>
             <TextBox x:Name="txtIdEliminar" Height="29" TextWrapping="Wrap" Text="" Margin="10,0,0,10"/>
-            <Button x:Name="btnConsulta" Content="Consulta" Margin="35,0,39,10"/>
-            <Button x:Name="btnBorrar" Content="Borrar" Margin="35,0,39,10"/>
+            <Button x:Name="btnConsulta" Content="Consulta" Margin="35,0,39,10" Click="btnConsulta_Click"/>
+            <Button x:Name="btnBorrar" Content="Borrar" Margin="35,0,39,10" IsEnabled="False" Click="btnBorrar_Click"/>
             <Label x:Name="LabNombre" Content="" Margin="19,0,21,10" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
             <Label x:Name="LabEdad" Content="" Margin="19,0,21,10" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="372" Margin="314,10,0,0" VerticalAlignment="Top" Width="163" Background="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}">
             <Label Content="MODIFICAR" Margin="21,0,59,50"/>
             <TextBox x:Name="txtIdModificar" Height="23" TextWrapping="Wrap" Text="" Margin="21,0,19,10"/>
-            <Button x:Name="BtnBuscar" Content="Button" Margin="44,0,46,10"/>
+            <Button x:Name="BtnBuscar" Content="Consulta" Margin="44,0,46,10" Click="BtnBuscar_Click"/>
             <TextBox x:Name="txtNombreModificar" Height="23" TextWrapping="Wrap" Text="" Margin="21,0,19,10"/>
             <TextBox x:Name="txtEdadModificar" Height="23" TextWrapping="Wrap" Text="" Margin="21,0,19,10"/>
-            <Button x:Name="BtnModificar" Content="Modificar" Margin="21,0,19,0"/>
+            <Button x:Name="BtnModificar" Content="Modificar" Margin="21,0,19,0" IsEnabled="False" Click="BtnModificar_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="392" Margin="477,10,0,0" VerticalAlignment="Top" Width="305">
             <DataGrid x:Name="DataGrid" Height="372" Margin="10,0,0,0"/>
