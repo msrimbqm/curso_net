@@ -41,14 +41,21 @@ namespace InyeccionSQL
             string edad = txtEdadInsertar.Text;
             string cadena = "insert into Personas(id, nombre, edad)" + "values (" + iden + ",'" + nombre + "'," + edad + ")";
             SqlCommand comando = new SqlCommand(cadena, conexion);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Los datos se guardaron correctamente");
-            txtEdadInsertar.Text = "";
-            txtNombreInsertar.Text = "";
-            txtIdInsertar.Text = "";
-            conexion.Close();
-
-
+            try
+            {
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Los datos se guardaron correctamente");
+                txtEdadInsertar.Text = "";
+                txtNombreInsertar.Text = "";
+                txtIdInsertar.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("Error grabar datos");
+            }
+                
+                               
+             conexion.Close();
 
         }
 
@@ -100,6 +107,7 @@ namespace InyeccionSQL
             }
             conexion.Close();
             btnBorrar.IsEnabled = false;
+            txtIdEliminar.Text = "";
             
 
 
@@ -158,7 +166,7 @@ namespace InyeccionSQL
             int cant;
             cant = comando.ExecuteNonQuery();
             //MessageBox.Show(cant.ToString());
-            if (cant == 2)
+            if (cant == 1)
             {
                 txtEdadModificar.Text = "";
                 txtNombreModificar.Text = "";
