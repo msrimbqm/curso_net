@@ -1,0 +1,10 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\bin\Debug\alumnos.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\bin\Debug\alumnos.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\bin\Debug\alumnos.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.Form1.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\inyeccionSQL2\alumnos\alumnos\obj\Debug\alumnos.pdb
