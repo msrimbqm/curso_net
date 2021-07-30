@@ -90,7 +90,8 @@ namespace alumnos
             if (txtDNI.Text!="")
 
               {
-                string cadena = "delete from Alumnos where DNI=" + txtDNI.Text;
+                string cadena = "delete from Alumnos where DNI='" + txtDNI.Text+"'";
+                MessageBox.Show(cadena);
 
                 SqlCommand comando = new SqlCommand(cadena, conexion);
                 int cant;
@@ -139,7 +140,7 @@ namespace alumnos
 
                 string cadena = "update Alumnos set dni='" + dni + "', nombre='" + nombre + "', turno='" + turno + "', sexo='" + sexo + "', especialidad='" + especialidad + "',  modulo='" + modulo + "', repetidor=" + repetidor + " where DNI='" + dni+"'";
 
-                MessageBox.Show(cadena);
+                //MessageBox.Show(cadena);
                 
                 
                 

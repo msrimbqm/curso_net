@@ -1,0 +1,10 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\bin\Debug\FormularioLinQLambda.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\bin\Debug\FormularioLinQLambda.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\bin\Debug\FormularioLinQLambda.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\FormularioLinQLambda\FormularioLinQLambda\FormularioLinQLambda\obj\Debug\FormularioLinQLambda.form1.resources
