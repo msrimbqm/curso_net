@@ -43,6 +43,8 @@ namespace SQLQ2Lambda
             this.btnbaja = new System.Windows.Forms.Button();
             this.btnmodificar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,12 +167,30 @@ namespace SQLQ2Lambda
             this.dataGridView1.Size = new System.Drawing.Size(429, 264);
             this.dataGridView1.TabIndex = 13;
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(248, 38);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscar.TabIndex = 14;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(49, 38);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(155, 20);
+            this.txtbuscar.TabIndex = 15;
+            // 
             // txtapellido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 593);
+            this.ClientSize = new System.Drawing.Size(800, 433);
+            this.Controls.Add(this.txtbuscar);
+            this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnmodificar);
             this.Controls.Add(this.btnbaja);
@@ -210,6 +230,8 @@ namespace SQLQ2Lambda
         private System.Windows.Forms.Button btnbaja;
         private System.Windows.Forms.Button btnmodificar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnbuscar;
+        private System.Windows.Forms.TextBox txtbuscar;
     }
 }
 

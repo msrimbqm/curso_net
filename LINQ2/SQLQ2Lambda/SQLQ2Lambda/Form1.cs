@@ -42,7 +42,7 @@ namespace SQLQ2Lambda
             MyEmpleado.Apellido = txtapellido.Text;
             MyEmpleado.Edad = int.Parse(txtedad.Text);
 
-            if (checkcasado.Checked==true) MyEmpleado.Casado = 1 else MyEmpleado.Casado = 0
+            if (checkcasado.Checked == true) MyEmpleado.Casado = 1 else MyEmpleado.Casado = 0
 
             bsa.Empleados.InsertOnSubmit(MyEmpleado);
             bsa.SubmitChanges();
@@ -55,7 +55,7 @@ namespace SQLQ2Lambda
         private void btnmodificar_Click(object sender, EventArgs e)
         {
 
-            Empleados MyEmpleado = bsa.Empleados.Single(p => p.Id == txtid.Text.ToString());
+            Empleados MyEmpleado = bsa.Empleados.Single(p => p.Id == int.Parse(txtid.Text);
             MyEmpleado.Id = int.Parse(txtid.Text);
             MyEmpleado.Nombre = txtnombre.Text;
             MyEmpleado.Apellido = txtapellido.Text;
