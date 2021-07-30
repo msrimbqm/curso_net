@@ -67,8 +67,8 @@ namespace FormularioLinQLambda
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            Products MyProduct = nortwind2.Products.Single(p =>
-            p.ProductName == CbNombreProd.SelectedItem.ToString());
+            Products MyProduct = nortwind2.Products.Single(x =>
+            x.ProductName == CbNombreProd.SelectedItem.ToString());
             nortwind2.Products.DeleteOnSubmit(MyProduct);
             nortwind2.SubmitChanges();
             cargarCombo();
