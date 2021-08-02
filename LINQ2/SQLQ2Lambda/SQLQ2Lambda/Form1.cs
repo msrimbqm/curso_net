@@ -50,8 +50,10 @@ namespace SQLQ2Lambda
            
             
             var x = from p in bsa.Empleados where txtbuscar.Text == p.Nombre select p;
-
             
+          
+
+
             dataGridView1.DataSource = x;
             
             int cuenta = x.Count();
@@ -116,11 +118,15 @@ namespace SQLQ2Lambda
 
         private void btnbaja_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            
             Empleados MyEmpleado = bsa.Empleados.Single(x =>
             x.Id == int.Parse(txtid.Text));
 
-            try
-            {
+            
+            
                 bsa.Empleados.DeleteOnSubmit(MyEmpleado);
                 bsa.SubmitChanges();
                 cargarGrid();

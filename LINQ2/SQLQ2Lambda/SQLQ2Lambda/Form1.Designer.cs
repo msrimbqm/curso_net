@@ -169,7 +169,7 @@ namespace SQLQ2Lambda
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(359, 99);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(429, 306);
+            this.dataGridView1.Size = new System.Drawing.Size(756, 306);
             this.dataGridView1.TabIndex = 13;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
@@ -214,9 +214,9 @@ namespace SQLQ2Lambda
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
-            this.groupBox1.Location = new System.Drawing.Point(29, 99);
+            this.groupBox1.Location = new System.Drawing.Point(29, 96);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(312, 250);
+            this.groupBox1.Size = new System.Drawing.Size(312, 253);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -237,7 +237,7 @@ namespace SQLQ2Lambda
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 433);
+            this.ClientSize = new System.Drawing.Size(1154, 433);
             this.Controls.Add(this.labbus);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label6);

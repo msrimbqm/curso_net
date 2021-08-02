@@ -7,3 +7,4 @@ C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lam
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\bin\Debug\SQLQ2Lambda.pdb
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.exe
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.csproj.AssemblyReference.cache
