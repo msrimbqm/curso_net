@@ -66,25 +66,20 @@ namespace SQLQ2Lambda
 
         private void btnalta_Click(object sender, EventArgs e)
         {
-
-            Empleados MyEmpleado = new Empleados();
+            try
+            {
+                Empleados MyEmpleado = new Empleados();
             MyEmpleado.Id = int.Parse(txtid.Text);
             MyEmpleado.Nombre = txtnombre.Text;
             MyEmpleado.Apellido = txtape.Text;
             MyEmpleado.Edad = int.Parse(txtedad.Text);
             MyEmpleado.Casado = checkcasado.Checked;
-
-           
-            try { 
+                 
             bsa.Empleados.InsertOnSubmit(MyEmpleado);
             bsa.SubmitChanges();
             cargarGrid();
-                reset();
+            reset();
             
-
-
-
-
                 }
         catch
                 {
@@ -98,19 +93,19 @@ namespace SQLQ2Lambda
 
         private void btnmodificar_Click(object sender, EventArgs e)
         {
-
+            try
+            { 
             Empleados MyEmpleado = bsa.Empleados.Single(p => p.Id == int.Parse(txtid.Text));
             MyEmpleado.Id = int.Parse(txtid.Text);
             MyEmpleado.Nombre = txtnombre.Text;
             MyEmpleado.Apellido = txtape.Text;
             MyEmpleado.Edad = int.Parse(txtedad.Text);
             MyEmpleado.Casado = checkcasado.Checked;
-            try
-            {
+            
+            bsa.SubmitChanges();
+            cargarGrid();
+            reset();
 
-                bsa.SubmitChanges();
-                cargarGrid();
-                reset();
             }
             catch
             {
@@ -164,10 +159,34 @@ namespace SQLQ2Lambda
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
+            // al seleccionar una fila meterla el campo  de texto
+            
+           int fila = dataGridView1.CurrentRow.Index;
+                               
+           txtid.Text = dataGridView1.Rows[fila].Cells[0].Value.ToString();
+           txtnombre.Text=dataGridView1.Rows[fila].Cells[1].Value.ToString();
+           txtape.Text = dataGridView1.Rows[fila].Cells[2].Value.ToString();
+           txtedad.Text = dataGridView1.Rows[fila].Cells[3].Value.ToString();
 
             
+            if (dataGridView1.Rows[fila].Cells[4].Value.ToString() == "True")
+                
+                checkcasado.Checked = true; 
+            else 
+                checkcasado.Checked = false;
 
-           
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     }
