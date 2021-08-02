@@ -1,4 +1,3 @@
-C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.csproj.AssemblyReference.cache
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.txtapellido.resources
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.Properties.Resources.resources
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ2\SQLQ2Lambda\SQLQ2Lambda\obj\Debug\SQLQ2Lambda.csproj.GenerateResource.cache
