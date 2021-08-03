@@ -51,8 +51,8 @@ namespace SQLQ2Lambda
             
             var x = from p in bsa.Empleados where txtbuscar.Text == p.Nombre select p;
             
+            // here. conteins
           
-
 
             dataGridView1.DataSource = x;
             
@@ -167,32 +167,29 @@ namespace SQLQ2Lambda
         {
             // al seleccionar una fila meterla el campo  de texto
             
-           int fila = dataGridView1.CurrentRow.Index;
-                               
-           txtid.Text = dataGridView1.Rows[fila].Cells[0].Value.ToString();
-           txtnombre.Text=dataGridView1.Rows[fila].Cells[1].Value.ToString();
-           txtape.Text = dataGridView1.Rows[fila].Cells[2].Value.ToString();
-           txtedad.Text = dataGridView1.Rows[fila].Cells[3].Value.ToString();
-
             
-            if (dataGridView1.Rows[fila].Cells[4].Value.ToString() == "True")
-                
-                checkcasado.Checked = true; 
-            else 
-                checkcasado.Checked = false;
+                int fila = 0;
+            // Voy comprobar que no da null el actual
+                DataGridViewRow xx = dataGridView1.CurrentRow;
+                if (xx != null)
+                    {
+
+                        fila = dataGridView1.CurrentRow.Index;
+
+                        txtid.Text = dataGridView1.Rows[fila].Cells[0].Value.ToString();
+                        txtnombre.Text = dataGridView1.Rows[fila].Cells[1].Value.ToString();
+                        txtape.Text = dataGridView1.Rows[fila].Cells[2].Value.ToString();
+                        txtedad.Text = dataGridView1.Rows[fila].Cells[3].Value.ToString();
 
 
+                if (dataGridView1.Rows[fila].Cells[4].Value.ToString() == "True")
+
+                        checkcasado.Checked = true;
+                else
+                        checkcasado.Checked = false;
 
 
-
-
-
-
-
-
-
-
-
+                }
 
         }
     }
