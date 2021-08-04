@@ -1,0 +1,10 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.Form1.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\bin\Debug\LINKQ3.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\bin\Debug\LINKQ3.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\bin\Debug\LINKQ3.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\LINQ3\LINKQ3\LINKQ3\obj\Debug\LINKQ3.pdb
