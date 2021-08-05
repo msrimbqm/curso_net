@@ -43,8 +43,8 @@ namespace Consolaclasesrepaso
 
         public Producto (string p1, double p2, string p3)
         {
-            this.Nombre = p1;
-            this.Precio = p2;
+            this.nombre = p1;
+            this.precio = p2;
             this.categoria = p3;
 
         }
@@ -52,8 +52,8 @@ namespace Consolaclasesrepaso
 
         public Producto(string p1, double p2)
         {
-            this.Nombre = p1;
-            this.Precio = p2;
+            this.nombre = p1;
+            this.precio = p2;
             
          }
 
@@ -62,9 +62,11 @@ namespace Consolaclasesrepaso
 
         // metodos ----------------------------------
 
-    
+        public void mostrar()
+        {
 
-
+            Console.WriteLine(Nombre + " de precio " + Precio + " de categoria " + Categoria);
+        }
 
 
 

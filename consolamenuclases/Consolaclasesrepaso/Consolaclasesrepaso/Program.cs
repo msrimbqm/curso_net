@@ -63,7 +63,6 @@ namespace Consolaclasesrepaso
                         break;
 
 
-
                     case "2":
 
                         // hacer pedido va a pedir el nombre producto y la cantidad solo
@@ -73,7 +72,9 @@ namespace Consolaclasesrepaso
                         
                         foreach (var x in almacen)
                         {
-                            Console.WriteLine(x.Nombre+" de precio "+x.Precio+" de categoria "+x.Categoria);
+
+                            x.mostrar();
+                            //Console.WriteLine(x.Nombre+" de precio "+x.Precio+" de categoria "+x.Categoria);
                             Console.WriteLine();
                             Console.WriteLine("Introduzca cantidad Producto: ");
                             num = int.Parse(Console.ReadLine());
@@ -97,7 +98,6 @@ namespace Consolaclasesrepaso
 
                     case "4":
                         break;
-
 
 
 
