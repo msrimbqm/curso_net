@@ -1,0 +1,7 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\obj\Debug\Consolaclasesrepaso.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\obj\Debug\Consolaclasesrepaso.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\bin\Debug\Consolaclasesrepaso.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\bin\Debug\Consolaclasesrepaso.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\bin\Debug\Consolaclasesrepaso.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\obj\Debug\Consolaclasesrepaso.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolamenuclases\Consolaclasesrepaso\Consolaclasesrepaso\obj\Debug\Consolaclasesrepaso.pdb
