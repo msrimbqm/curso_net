@@ -88,7 +88,12 @@ namespace Consolaclasesrepaso
 
                     case "3":
 
-                       
+                        foreach (var x in almacen)
+                        {
+
+                            x.mostrar();
+                           
+                        }
                         Console.WriteLine("El total es:" + Total.ToString());
                         Console.WriteLine("El IVA es:" + (Total * 0.21).ToString());
                         Console.WriteLine("El Total con IVA  es:" + (Total * 1.21).ToString());
