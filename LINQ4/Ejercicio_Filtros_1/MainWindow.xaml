@@ -15,7 +15,7 @@
         <Label x:Name="Label3" Content="Fecha Inscripción" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
         <Label Content="Desde" HorizontalAlignment="Left" Margin="143,70,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="DatePicker1" HorizontalAlignment="Left" Margin="201,72,0,0" VerticalAlignment="Top" IsEnabled="False" SelectedDate="2021/01/01"/>
-        <CheckBox x:Name="CheckBox1" Content="" HorizontalAlignment="Left"  Margin="354,77,8,0" VerticalAlignment="Top" Unchecked="CheckBox1_UnChecked" Checked="CheckBox1_Checked"/>
+        <CheckBox x:Name="CheckBox1" Content="" HorizontalAlignment="Left"  Margin="374,77,8,8" VerticalAlignment="Top" Unchecked="CheckBox1_UnChecked" Checked="CheckBox1_Checked"/>
         <Label Content="Hasta" HorizontalAlignment="Left" Margin="418,74,0,0" VerticalAlignment="Top" Width="57"/>
         <DatePicker x:Name="DatePicker2" HorizontalAlignment="Left" Margin="480,75,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False" SelectedDate="2021/01/01" />
         <CheckBox x:Name="CheckBox3" Content="Solo Instructores" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" Unchecked="CheckBox3_UnChecked" Checked="CheckBox3_Checked"/>
@@ -25,7 +25,7 @@
         <CheckBox x:Name="CheckBox4" Content="" HorizontalAlignment="Left" Margin="423,141,0,0" VerticalAlignment="Top" Unchecked="CheckBox4_UnChecked" Checked="CheckBox4_Checked" IsEnabled="False"/>
         <Label Content="Hasta" HorizontalAlignment="Left" Margin="469,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.941,0.768"/>
         <DatePicker x:Name="DatePicker4" HorizontalAlignment="Left" Margin="524,141,0,0" VerticalAlignment="Top" IsEnabled="False" SelectedDate="2021/01/01"/>
-        <CheckBox x:Name="CheckBox5" Content="" HorizontalAlignment="Left" Margin="679,145,0,0" VerticalAlignment="Top" Unchecked="CheckBox5_UnChecked" Checked="CheckBox5_Checked" IsEnabled="False"/>
+        <CheckBox x:Name="CheckBox5" Content="" HorizontalAlignment="Left" Margin="699,145,0,0" VerticalAlignment="Top" Unchecked="CheckBox5_UnChecked" Checked="CheckBox5_Checked" IsEnabled="False"/>
         <Label Content="Curso" HorizontalAlignment="Left" Margin="26,174,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" Margin="81,177,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem  IsSelected="True">Arduino</ComboBoxItem>
