@@ -36,6 +36,10 @@ namespace Ejercicio_Filtros
             /// </summary>
             InitializeComponent();
             cargarGrid();
+            DatePicker1.SelectedDate = DateTime.Now;
+            DatePicker2.SelectedDate = DateTime.Now;
+            DatePicker3.SelectedDate = DateTime.Now;
+            DatePicker4.SelectedDate = DateTime.Now;
 
         }
 
@@ -97,12 +101,31 @@ namespace Ejercicio_Filtros
             string curso = ComboBox1.Text;
 
             var listagrid = from f in filtros.datos
-                            where f.Curso == curso && f.Fecha_Insc>=f1 && f.Fecha_Insc<=f2
+                            where  f.Fecha_Insc>=f1 && f.Fecha_Insc<=f2
+                            select f;
+            DGV1.ItemsSource = listagrid;
+        }
+
+        void cargarGridFechasC(DateTime f1, DateTime f2)
+        {
+            string curso = ComboBox1.Text;
+
+            var listagrid = from f in filtros.datos
+                            where  f.Fecha_Cont >= f1 && f.Fecha_Cont<= f2
                             select f;
             DGV1.ItemsSource = listagrid;
         }
 
 
+        void cargarGridFechas4(DateTime f1, DateTime f2, DateTime f3, DateTime f4)
+        {
+            string curso = ComboBox1.Text;
+
+            var listagrid = from f in filtros.datos
+                            where  f.Fecha_Insc >= f1 && f.Fecha_Insc <= f2  && f.Fecha_Cont>= f1 && f.Fecha_Cont<= f2
+                            select f;
+            DGV1.ItemsSource = listagrid;
+        }
 
 
         /// <summary>
@@ -186,9 +209,55 @@ namespace Ejercicio_Filtros
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox1.IsEnabled == true && CheckBox2.IsEnabled == true)
 
-                cargarGridFechas(DatePicker1.DisplayDate, DatePicker2.DisplayDate);
+        
+
+
+            if (CheckBox1.IsEnabled == true && CheckBox2.IsEnabled == true && CheckBox3.IsChecked == false)
+                //filtra por fechas de arriba
+                {
+                
+                cargarGridFechas(DatePicker1.DisplayDate, DatePicker2.DisplayDate); 
+                }
+
+            
+               // filtra por fecha de abajo
+                if (CheckBox4.IsChecked== true && CheckBox5.IsChecked == true && CheckBox1.IsChecked== false && CheckBox2.IsChecked == false)
+                {
+                  
+                cargarGridFechasC(DatePicker3.DisplayDate, DatePicker4.DisplayDate);
+                
+            }
+                
+                
+                // caso filtrado por las cuatro fechas
+
+                 if (CheckBox4.IsChecked == true && CheckBox5.IsChecked== true && CheckBox1.IsChecked == true && CheckBox2.IsChecked == true)
+                    {
+                        cargarGridFechas4(DatePicker1.DisplayDate, DatePicker2.DisplayDate, DatePicker3.DisplayDate, DatePicker4.DisplayDate);
+               
+                    }
+
+        
+
+
+
+
+
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            cargarGrid();
+            DatePicker1.SelectedDate = DateTime.Now;
+            DatePicker2.SelectedDate = DateTime.Now;
+            DatePicker3.SelectedDate = DateTime.Now;
+            DatePicker4.SelectedDate = DateTime.Now;
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            
+
         }
     }
 
