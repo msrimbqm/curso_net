@@ -1,0 +1,29 @@
+﻿<Window x:Class="EntityFrameWorkWPF1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntityFrameWorkWPF1"
+        mc:Ignorable="d"
+        Title="Ventana de Insertar" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="139*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="136,148,0,0" VerticalAlignment="Top" Height="26" Width="54"/>
+        <TextBox x:Name="TxtNombre" HorizontalAlignment="Left" Height="23" Margin="12,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" Grid.Column="1"/>
+        <Label Content="Especialidad" HorizontalAlignment="Left" Margin="136,210,0,0" VerticalAlignment="Top" Height="26" Width="75"/>
+        <ComboBox x:Name="cmbEspec" HorizontalAlignment="Left" Margin="12,214,0,0" VerticalAlignment="Top" Width="333" Grid.Column="1" Height="22">
+            <ComboBoxItem>Mates</ComboBoxItem>
+            <ComboBoxItem>Religión</ComboBoxItem>
+            <ComboBoxItem>Sus Labores</ComboBoxItem>
+        </ComboBox>
+
+
+
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="142,289,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Height="22" Click="Button_Click"/>
+        <TextBox x:Name="TxtId" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="129,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
