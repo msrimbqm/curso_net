@@ -47,8 +47,8 @@ namespace EntityFrameWorkWPF1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             // boton de modificar
-            //int id = (MyDG.SelectedItem as Profesores).id;
-            Window1 Vcambiar = new Window1();
+            int id = (MyDG.SelectedItem as Profesores).id;
+            Window1 Vcambiar = new Window1(id);
             Vcambiar.ShowDialog();
         }
 
