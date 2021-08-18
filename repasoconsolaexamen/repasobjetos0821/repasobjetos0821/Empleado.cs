@@ -44,7 +44,7 @@ namespace repasobjetos0821
 
         public void  CrearSueldo()
         {
-            double entrada;
+            double entrada=0;
 
             Console.WriteLine("Introduzca importe:");
             entrada=double.Parse(Console.ReadLine());
@@ -66,7 +66,7 @@ namespace repasobjetos0821
 
         public void CargarDatos()
         {
-
+            // tipo no lo pido porque no estaba muy claro donde deberia ir y sueldo sale con el metodo
             Console.WriteLine("Nombre:");
             Nombre = Console.ReadLine();
             Console.WriteLine("Apellido:");

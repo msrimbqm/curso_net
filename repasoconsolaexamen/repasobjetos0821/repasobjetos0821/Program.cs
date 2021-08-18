@@ -21,7 +21,6 @@ namespace repasobjetos0821
             
             Cliente MyCliente = new Cliente("Mabel", "Madueno", "10890379V", "nose2", "Jefe", "");
             MyCliente.CargarDatos();
-            
             MyCliente.GenerarCodigo();
             MyCliente.mostrar();
 

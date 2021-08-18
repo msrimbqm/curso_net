@@ -42,7 +42,8 @@ namespace repasobjetos0821
        public void  GenerarCodigo()
         {
 
-            codigo = "C" + Nombre.Substring(0, 3) + Documento.Substring(0, 3);
+            
+            codigo = "C" + Nombre.Substring(0, 3) + Documento.Substring(0, 2);
                
         
         }
@@ -58,7 +59,7 @@ namespace repasobjetos0821
 
         public void CargarDatos()
         {
-
+           // tipo no lo pido porque no estaba muy claro donde deberia ir y codigo sale con el metodo
             Console.WriteLine("Nombre:");
             Nombre = Console.ReadLine();
             Console.WriteLine("Apellido:");

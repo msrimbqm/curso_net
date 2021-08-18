@@ -1,0 +1,25 @@
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EXAMEN AGOSTO.exe.config
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EXAMEN AGOSTO.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EXAMEN AGOSTO.pdb
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.AssemblyReference.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN_AGOSTO.Form1.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN_AGOSTO.Properties.Resources.resources
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.GenerateResource.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.exe
+C:\Users\Tarde\source\repos\juanmagv\CURSO_NET\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN_AGOSTO.Form1.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN_AGOSTO.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EXAMEN AGOSTO.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EXAMEN AGOSTO.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EXAMEN AGOSTO.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.dll
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.xml
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\entity2bis\EXAMEN AGOSTO\EXAMEN AGOSTO\obj\Debug\EXAMEN AGOSTO.csproj.CopyComplete
