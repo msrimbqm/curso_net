@@ -49,10 +49,11 @@ namespace EXAMEN_AGOSTO
             this.btEliminar = new System.Windows.Forms.Button();
             this.btModificar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.LabAviso = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,42 +229,55 @@ namespace EXAMEN_AGOSTO
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(742, 234);
             this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // button1
+            // btn1
             // 
-            this.button1.Location = new System.Drawing.Point(457, 161);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "|<";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn1.Location = new System.Drawing.Point(501, 221);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(49, 23);
+            this.btn1.TabIndex = 20;
+            this.btn1.Text = "|<";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // button2
+            // btn2
             // 
-            this.button2.Location = new System.Drawing.Point(512, 162);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 23);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "<";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn2.Location = new System.Drawing.Point(556, 222);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(49, 23);
+            this.btn2.TabIndex = 21;
+            this.btn2.Text = "<";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
-            // button3
+            // btn3
             // 
-            this.button3.Location = new System.Drawing.Point(567, 162);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 23);
-            this.button3.TabIndex = 22;
-            this.button3.Text = ">";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn3.Location = new System.Drawing.Point(611, 222);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(49, 23);
+            this.btn3.TabIndex = 22;
+            this.btn3.Text = ">";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
-            // button4
+            // btn4
             // 
-            this.button4.Location = new System.Drawing.Point(622, 162);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(49, 23);
-            this.button4.TabIndex = 23;
-            this.button4.Text = ">|";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn4.Location = new System.Drawing.Point(666, 222);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(49, 23);
+            this.btn4.TabIndex = 23;
+            this.btn4.Text = ">|";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            // 
+            // LabAviso
+            // 
+            this.LabAviso.AutoSize = true;
+            this.LabAviso.Location = new System.Drawing.Point(512, 63);
+            this.LabAviso.Name = "LabAviso";
+            this.LabAviso.Size = new System.Drawing.Size(0, 13);
+            this.LabAviso.TabIndex = 24;
             // 
             // Form1
             // 
@@ -271,10 +285,11 @@ namespace EXAMEN_AGOSTO
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 506);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LabAviso);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btModificar);
             this.Controls.Add(this.btEliminar);
@@ -326,10 +341,11 @@ namespace EXAMEN_AGOSTO
         private System.Windows.Forms.Button btEliminar;
         private System.Windows.Forms.Button btModificar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Label LabAviso;
     }
 }
 
