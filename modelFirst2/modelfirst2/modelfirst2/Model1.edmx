@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="PUESTOSet" EntityType="Model1.Store.PUESTOSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NIVEL_RIESGOSet" EntityType="Model1.Store.NIVEL_RIESGOSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REGISTRO_TRANSACCIN_DEDUCCIONSet" EntityType="Model1.Store.REGISTRO_TRANSACCIN_DEDUCCIONSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPO_DE_DEDUCCIONSet" EntityType="Model1.Store.TIPO_DE_DEDUCCIONSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="REGISTRO_TRANSACCIONSet" EntityType="Model1.Store.REGISTRO_TRANSACCIONSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPO_DE_INGRESOSet" EntityType="Model1.Store.TIPO_DE_INGRESOSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DEPARTAMENTOSet" EntityType="Model1.Store.DEPARTAMENTOSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EMPLEADOSet" EntityType="Model1.Store.EMPLEADOSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="NIVEL_RIESGOPUESTO" Association="Model1.Store.NIVEL_RIESGOPUESTO">
+      <End Role="NIVEL_RIESGO" EntitySet="NIVEL_RIESGOSet" />
+      <End Role="PUESTO" EntitySet="PUESTOSet" />
+    </AssociationSet>
+    <AssociationSet Name="TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION" Association="Model1.Store.TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION">
+      <End Role="TIPO_DE_DEDUCCION" EntitySet="TIPO_DE_DEDUCCIONSet" />
+      <End Role="REGISTRO_TRANSACCIN_DEDUCCION" EntitySet="REGISTRO_TRANSACCIN_DEDUCCIONSet" />
+    </AssociationSet>
+    <AssociationSet Name="TIPO_DE_INGRESOREGISTRO_TRANSACCION" Association="Model1.Store.TIPO_DE_INGRESOREGISTRO_TRANSACCION">
+      <End Role="TIPO_DE_INGRESO" EntitySet="TIPO_DE_INGRESOSet" />
+      <End Role="REGISTRO_TRANSACCION" EntitySet="REGISTRO_TRANSACCIONSet" />
+    </AssociationSet>
+    <AssociationSet Name="EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION" Association="Model1.Store.EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION">
+      <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+      <End Role="REGISTRO_TRANSACCIN_DEDUCCION" EntitySet="REGISTRO_TRANSACCIN_DEDUCCIONSet" />
+    </AssociationSet>
+    <AssociationSet Name="PUESTOEMPLEADO" Association="Model1.Store.PUESTOEMPLEADO">
+      <End Role="PUESTO" EntitySet="PUESTOSet" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+    </AssociationSet>
+    <AssociationSet Name="EMPLEADOREGISTRO_TRANSACCION" Association="Model1.Store.EMPLEADOREGISTRO_TRANSACCION">
+      <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+      <End Role="REGISTRO_TRANSACCION" EntitySet="REGISTRO_TRANSACCIONSet" />
+    </AssociationSet>
+    <AssociationSet Name="DEPARTAMENTOEMPLEADO" Association="Model1.Store.DEPARTAMENTOEMPLEADO">
+      <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTOSet" />
+      <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="PUESTOSet">
+    <Key>
+      <PropertyRef Name="Id_Puesto" />
+    </Key>
+    <Property Name="Id_Puesto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Puesto" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id_Nivel_Riesgo" Type="int" Nullable="false" />
+    <Property Name="Nivel_Salario_Min" Type="int" Nullable="false" />
+    <Property Name="Nivel_Salario_Max" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NIVEL_RIESGOSet">
+    <Key>
+      <PropertyRef Name="Id_Nivel_Riesgo" />
+    </Key>
+    <Property Name="Id_Nivel_Riesgo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tipo_Riesgo" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REGISTRO_TRANSACCIN_DEDUCCIONSet">
+    <Key>
+      <PropertyRef Name="Id_Transaccion_Deduccion" />
+    </Key>
+    <Property Name="Id_Transaccion_Deduccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Empleado" Type="int" Nullable="false" />
+    <Property Name="Id_Tipo_Deduccion" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Monto" Type="float" Nullable="false" />
+    <Property Name="EMPLEADO_Id_Empleado" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_DE_DEDUCCIONSet">
+    <Key>
+      <PropertyRef Name="Id_Tipo_Deduccion" />
+    </Key>
+    <Property Name="Id_Tipo_Deduccion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Tipo_Deduccion" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="REGISTRO_TRANSACCIONSet">
+    <Key>
+      <PropertyRef Name="Id_Transaccion_Ingreso" />
+    </Key>
+    <Property Name="Id_Transaccion_Ingreso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Empleado" Type="int" Nullable="false" />
+    <Property Name="Id_Tipo_Ingreso" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Monto" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TIPO_DE_INGRESOSet">
+    <Key>
+      <PropertyRef Name="Id_Tipo_Ingreso" />
+    </Key>
+    <Property Name="Id_Tipo_Ingreso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Tipo_Deduccion" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DEPARTAMENTOSet">
+    <Key>
+      <PropertyRef Name="Id_Departamento" />
+    </Key>
+    <Property Name="Id_Departamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Departamento" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ubicacion_Fiscal_Departa" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EMPLEADOSet">
+    <Key>
+      <PropertyRef Name="Id_Empleado" />
+    </Key>
+    <Property Name="Id_Empleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cod_Empleado" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Nombre_Empleado" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id_Departamento" Type="int" Nullable="false" />
+    <Property Name="Id_Puesto" Type="int" Nullable="false" />
+    <Property Name="Salario_Mensual_Emplea" Type="float" Nullable="false" />
+    <Property Name="Cedula_Empleado" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Responsable_Area" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DEPARTAMENTO_Id_Departamento" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="NIVEL_RIESGOPUESTO">
+    <End Role="NIVEL_RIESGO" Type="Model1.Store.NIVEL_RIESGOSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PUESTO" Type="Model1.Store.PUESTOSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NIVEL_RIESGO">
+        <PropertyRef Name="Id_Nivel_Riesgo" />
+      </Principal>
+      <Dependent Role="PUESTO">
+        <PropertyRef Name="Id_Nivel_Riesgo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION">
+    <End Role="TIPO_DE_DEDUCCION" Type="Model1.Store.TIPO_DE_DEDUCCIONSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="REGISTRO_TRANSACCIN_DEDUCCION" Type="Model1.Store.REGISTRO_TRANSACCIN_DEDUCCIONSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_DE_DEDUCCION">
+        <PropertyRef Name="Id_Tipo_Deduccion" />
+      </Principal>
+      <Dependent Role="REGISTRO_TRANSACCIN_DEDUCCION">
+        <PropertyRef Name="Id_Tipo_Deduccion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TIPO_DE_INGRESOREGISTRO_TRANSACCION">
+    <End Role="TIPO_DE_INGRESO" Type="Model1.Store.TIPO_DE_INGRESOSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="REGISTRO_TRANSACCION" Type="Model1.Store.REGISTRO_TRANSACCIONSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_DE_INGRESO">
+        <PropertyRef Name="Id_Tipo_Ingreso" />
+      </Principal>
+      <Dependent Role="REGISTRO_TRANSACCION">
+        <PropertyRef Name="Id_Tipo_Ingreso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION">
+    <End Role="EMPLEADO" Type="Model1.Store.EMPLEADOSet" Multiplicity="1" />
+    <End Role="REGISTRO_TRANSACCIN_DEDUCCION" Type="Model1.Store.REGISTRO_TRANSACCIN_DEDUCCIONSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="REGISTRO_TRANSACCIN_DEDUCCION">
+        <PropertyRef Name="EMPLEADO_Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PUESTOEMPLEADO">
+    <End Role="PUESTO" Type="Model1.Store.PUESTOSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EMPLEADO" Type="Model1.Store.EMPLEADOSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PUESTO">
+        <PropertyRef Name="Id_Puesto" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="Id_Puesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EMPLEADOREGISTRO_TRANSACCION">
+    <End Role="EMPLEADO" Type="Model1.Store.EMPLEADOSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="REGISTRO_TRANSACCION" Type="Model1.Store.REGISTRO_TRANSACCIONSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EMPLEADO">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="REGISTRO_TRANSACCION">
+        <PropertyRef Name="Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DEPARTAMENTOEMPLEADO">
+    <End Role="DEPARTAMENTO" Type="Model1.Store.DEPARTAMENTOSet" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EMPLEADO" Type="Model1.Store.EMPLEADOSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DEPARTAMENTO">
+        <PropertyRef Name="Id_Departamento" />
+      </Principal>
+      <Dependent Role="EMPLEADO">
+        <PropertyRef Name="DEPARTAMENTO_Id_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PUESTOSet" EntityType="Model1.PUESTO" />
+          <EntitySet Name="NIVEL_RIESGOSet" EntityType="Model1.NIVEL_RIESGO" />
+          <AssociationSet Name="NIVEL_RIESGOPUESTO" Association="Model1.NIVEL_RIESGOPUESTO">
+            <End Role="NIVEL_RIESGO" EntitySet="NIVEL_RIESGOSet" />
+            <End Role="PUESTO" EntitySet="PUESTOSet" />
+          </AssociationSet>
+          <EntitySet Name="REGISTRO_TRANSACCIN_DEDUCCIONSet" EntityType="Model1.REGISTRO_TRANSACCIN_DEDUCCION" />
+          <EntitySet Name="TIPO_DE_DEDUCCIONSet" EntityType="Model1.TIPO_DE_DEDUCCION" />
+          <AssociationSet Name="TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION" Association="Model1.TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION">
+            <End Role="TIPO_DE_DEDUCCION" EntitySet="TIPO_DE_DEDUCCIONSet" />
+            <End Role="REGISTRO_TRANSACCIN_DEDUCCION" EntitySet="REGISTRO_TRANSACCIN_DEDUCCIONSet" />
+          </AssociationSet>
+          <EntitySet Name="REGISTRO_TRANSACCIONSet" EntityType="Model1.REGISTRO_TRANSACCION" />
+          <EntitySet Name="TIPO_DE_INGRESOSet" EntityType="Model1.TIPO_DE_INGRESO" />
+          <AssociationSet Name="TIPO_DE_INGRESOREGISTRO_TRANSACCION" Association="Model1.TIPO_DE_INGRESOREGISTRO_TRANSACCION">
+            <End Role="TIPO_DE_INGRESO" EntitySet="TIPO_DE_INGRESOSet" />
+            <End Role="REGISTRO_TRANSACCION" EntitySet="REGISTRO_TRANSACCIONSet" />
+          </AssociationSet>
+          <EntitySet Name="DEPARTAMENTOSet" EntityType="Model1.DEPARTAMENTO" />
+          <EntitySet Name="EMPLEADOSet" EntityType="Model1.EMPLEADO" />
+          <AssociationSet Name="EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION" Association="Model1.EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION">
+            <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+            <End Role="REGISTRO_TRANSACCIN_DEDUCCION" EntitySet="REGISTRO_TRANSACCIN_DEDUCCIONSet" />
+          </AssociationSet>
+          <AssociationSet Name="PUESTOEMPLEADO" Association="Model1.PUESTOEMPLEADO">
+            <End Role="PUESTO" EntitySet="PUESTOSet" />
+            <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+          </AssociationSet>
+          <AssociationSet Name="EMPLEADOREGISTRO_TRANSACCION" Association="Model1.EMPLEADOREGISTRO_TRANSACCION">
+            <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+            <End Role="REGISTRO_TRANSACCION" EntitySet="REGISTRO_TRANSACCIONSet" />
+          </AssociationSet>
+          <AssociationSet Name="DEPARTAMENTOEMPLEADO" Association="Model1.DEPARTAMENTOEMPLEADO">
+            <End Role="DEPARTAMENTO" EntitySet="DEPARTAMENTOSet" />
+            <End Role="EMPLEADO" EntitySet="EMPLEADOSet" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="PUESTO">
+          <Key>
+            <PropertyRef Name="Id_Puesto" />
+          </Key>
+          <Property Name="Id_Puesto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Puesto" Type="String" Nullable="false" />
+          <Property Name="Id_Nivel_Riesgo" Type="Int32" Nullable="false" />
+          <Property Name="Nivel_Salario_Min" Type="Int32" Nullable="false" />
+          <Property Name="Nivel_Salario_Max" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="NIVEL_RIESGO" Relationship="Model1.NIVEL_RIESGOPUESTO" FromRole="PUESTO" ToRole="NIVEL_RIESGO" />
+          <NavigationProperty Name="EMPLEADO" Relationship="Model1.PUESTOEMPLEADO" FromRole="PUESTO" ToRole="EMPLEADO" />
+        </EntityType>
+        <EntityType Name="NIVEL_RIESGO">
+          <Key>
+            <PropertyRef Name="Id_Nivel_Riesgo" />
+          </Key>
+          <Property Name="Id_Nivel_Riesgo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tipo_Riesgo" Type="String" Nullable="false" />
+          <NavigationProperty Name="PUESTO" Relationship="Model1.NIVEL_RIESGOPUESTO" FromRole="NIVEL_RIESGO" ToRole="PUESTO" />
+        </EntityType>
+        <Association Name="NIVEL_RIESGOPUESTO">
+          <End Type="Model1.NIVEL_RIESGO" Role="NIVEL_RIESGO" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Model1.PUESTO" Role="PUESTO" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="NIVEL_RIESGO">
+              <PropertyRef Name="Id_Nivel_Riesgo" />
+            </Principal>
+            <Dependent Role="PUESTO">
+              <PropertyRef Name="Id_Nivel_Riesgo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="REGISTRO_TRANSACCIN_DEDUCCION">
+          <Key>
+            <PropertyRef Name="Id_Transaccion_Deduccion" />
+          </Key>
+          <Property Name="Id_Transaccion_Deduccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_Empleado" Type="Int32" Nullable="false" />
+          <Property Name="Id_Tipo_Deduccion" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" />
+          <Property Name="Monto" Type="Double" Nullable="false" />
+          <NavigationProperty Name="TIPO_DE_DEDUCCION" Relationship="Model1.TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION" FromRole="REGISTRO_TRANSACCIN_DEDUCCION" ToRole="TIPO_DE_DEDUCCION" />
+          <NavigationProperty Name="EMPLEADO" Relationship="Model1.EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION" FromRole="REGISTRO_TRANSACCIN_DEDUCCION" ToRole="EMPLEADO" />
+        </EntityType>
+        <EntityType Name="TIPO_DE_DEDUCCION">
+          <Key>
+            <PropertyRef Name="Id_Tipo_Deduccion" />
+          </Key>
+          <Property Name="Id_Tipo_Deduccion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Tipo_Deduccion" Type="String" Nullable="false" />
+          <NavigationProperty Name="REGISTRO_TRANSACCIN_DEDUCCION" Relationship="Model1.TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION" FromRole="TIPO_DE_DEDUCCION" ToRole="REGISTRO_TRANSACCIN_DEDUCCION" />
+        </EntityType>
+        <Association Name="TIPO_DE_DEDUCCIONREGISTRO_TRANSACCIN_DEDUCCION">
+          <End Type="Model1.TIPO_DE_DEDUCCION" Role="TIPO_DE_DEDUCCION" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Model1.REGISTRO_TRANSACCIN_DEDUCCION" Role="REGISTRO_TRANSACCIN_DEDUCCION" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="TIPO_DE_DEDUCCION">
+              <PropertyRef Name="Id_Tipo_Deduccion" />
+            </Principal>
+            <Dependent Role="REGISTRO_TRANSACCIN_DEDUCCION">
+              <PropertyRef Name="Id_Tipo_Deduccion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="REGISTRO_TRANSACCION">
+          <Key>
+            <PropertyRef Name="Id_Transaccion_Ingreso" />
+          </Key>
+          <Property Name="Id_Transaccion_Ingreso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Id_Empleado" Type="Int32" Nullable="false" />
+          <Property Name="Id_Tipo_Ingreso" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" />
+          <Property Name="Monto" Type="Double" Nullable="false" />
+          <NavigationProperty Name="TIPO_DE_INGRESO" Relationship="Model1.TIPO_DE_INGRESOREGISTRO_TRANSACCION" FromRole="REGISTRO_TRANSACCION" ToRole="TIPO_DE_INGRESO" />
+          <NavigationProperty Name="EMPLEADO" Relationship="Model1.EMPLEADOREGISTRO_TRANSACCION" FromRole="REGISTRO_TRANSACCION" ToRole="EMPLEADO" />
+        </EntityType>
+        <EntityType Name="TIPO_DE_INGRESO">
+          <Key>
+            <PropertyRef Name="Id_Tipo_Ingreso" />
+          </Key>
+          <Property Name="Id_Tipo_Ingreso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Tipo_Deduccion" Type="String" Nullable="false" />
+          <NavigationProperty Name="REGISTRO_TRANSACCION" Relationship="Model1.TIPO_DE_INGRESOREGISTRO_TRANSACCION" FromRole="TIPO_DE_INGRESO" ToRole="REGISTRO_TRANSACCION" />
+        </EntityType>
+        <Association Name="TIPO_DE_INGRESOREGISTRO_TRANSACCION">
+          <End Type="Model1.TIPO_DE_INGRESO" Role="TIPO_DE_INGRESO" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Model1.REGISTRO_TRANSACCION" Role="REGISTRO_TRANSACCION" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="TIPO_DE_INGRESO">
+              <PropertyRef Name="Id_Tipo_Ingreso" />
+            </Principal>
+            <Dependent Role="REGISTRO_TRANSACCION">
+              <PropertyRef Name="Id_Tipo_Ingreso" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="DEPARTAMENTO">
+          <Key>
+            <PropertyRef Name="Id_Departamento" />
+          </Key>
+          <Property Name="Id_Departamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre_Departamento" Type="String" Nullable="false" />
+          <Property Name="Ubicacion_Fiscal_Departa" Type="String" Nullable="false" />
+          <NavigationProperty Name="EMPLEADO" Relationship="Model1.DEPARTAMENTOEMPLEADO" FromRole="DEPARTAMENTO" ToRole="EMPLEADO" />
+        </EntityType>
+        <EntityType Name="EMPLEADO">
+          <Key>
+            <PropertyRef Name="Id_Empleado" />
+          </Key>
+          <Property Name="Id_Empleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cod_Empleado" Type="String" Nullable="false" />
+          <Property Name="Nombre_Empleado" Type="String" Nullable="false" />
+          <Property Name="Id_Departamento" Type="Int32" Nullable="false" />
+          <Property Name="Id_Puesto" Type="Int32" Nullable="false" />
+          <Property Name="Salario_Mensual_Emplea" Type="Double" Nullable="false" />
+          <Property Name="Cedula_Empleado" Type="String" Nullable="false" />
+          <Property Name="Responsable_Area" Type="String" Nullable="false" />
+          <NavigationProperty Name="REGISTRO_TRANSACCIN_DEDUCCION" Relationship="Model1.EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION" FromRole="EMPLEADO" ToRole="REGISTRO_TRANSACCIN_DEDUCCION" />
+          <NavigationProperty Name="PUESTO" Relationship="Model1.PUESTOEMPLEADO" FromRole="EMPLEADO" ToRole="PUESTO" />
+          <NavigationProperty Name="REGISTRO_TRANSACCION" Relationship="Model1.EMPLEADOREGISTRO_TRANSACCION" FromRole="EMPLEADO" ToRole="REGISTRO_TRANSACCION" />
+          <NavigationProperty Name="DEPARTAMENTO" Relationship="Model1.DEPARTAMENTOEMPLEADO" FromRole="EMPLEADO" ToRole="DEPARTAMENTO" />
+        </EntityType>
+        <Association Name="EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION">
+          <End Type="Model1.EMPLEADO" Role="EMPLEADO" Multiplicity="1" >
+          </End>
+          <End Type="Model1.REGISTRO_TRANSACCIN_DEDUCCION" Role="REGISTRO_TRANSACCIN_DEDUCCION" Multiplicity="*" >
+          </End>
+        </Association>
+        <Association Name="PUESTOEMPLEADO">
+          <End Type="Model1.PUESTO" Role="PUESTO" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Model1.EMPLEADO" Role="EMPLEADO" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="PUESTO">
+              <PropertyRef Name="Id_Puesto" />
+            </Principal>
+            <Dependent Role="EMPLEADO">
+              <PropertyRef Name="Id_Puesto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EMPLEADOREGISTRO_TRANSACCION">
+          <End Type="Model1.EMPLEADO" Role="EMPLEADO" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Model1.REGISTRO_TRANSACCION" Role="REGISTRO_TRANSACCION" Multiplicity="*" >
+          </End>
+          <ReferentialConstraint>
+            <Principal Role="EMPLEADO">
+              <PropertyRef Name="Id_Empleado" />
+            </Principal>
+            <Dependent Role="REGISTRO_TRANSACCION">
+              <PropertyRef Name="Id_Empleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DEPARTAMENTOEMPLEADO">
+          <End Type="Model1.DEPARTAMENTO" Role="DEPARTAMENTO" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Model1.EMPLEADO" Role="EMPLEADO" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="PUESTOSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.PUESTO)">
+        <MappingFragment StoreEntitySet="PUESTOSet">
+          <ScalarProperty Name="Id_Puesto" ColumnName="Id_Puesto" />
+          <ScalarProperty Name="Nombre_Puesto" ColumnName="Nombre_Puesto" />
+          <ScalarProperty Name="Id_Nivel_Riesgo" ColumnName="Id_Nivel_Riesgo" />
+          <ScalarProperty Name="Nivel_Salario_Min" ColumnName="Nivel_Salario_Min" />
+          <ScalarProperty Name="Nivel_Salario_Max" ColumnName="Nivel_Salario_Max" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NIVEL_RIESGOSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.NIVEL_RIESGO)">
+        <MappingFragment StoreEntitySet="NIVEL_RIESGOSet">
+          <ScalarProperty Name="Id_Nivel_Riesgo" ColumnName="Id_Nivel_Riesgo" />
+          <ScalarProperty Name="Tipo_Riesgo" ColumnName="Tipo_Riesgo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRO_TRANSACCIN_DEDUCCIONSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.REGISTRO_TRANSACCIN_DEDUCCION)">
+        <MappingFragment StoreEntitySet="REGISTRO_TRANSACCIN_DEDUCCIONSet">
+          <ScalarProperty Name="Id_Transaccion_Deduccion" ColumnName="Id_Transaccion_Deduccion" />
+          <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
+          <ScalarProperty Name="Id_Tipo_Deduccion" ColumnName="Id_Tipo_Deduccion" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_DE_DEDUCCIONSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.TIPO_DE_DEDUCCION)">
+        <MappingFragment StoreEntitySet="TIPO_DE_DEDUCCIONSet">
+          <ScalarProperty Name="Id_Tipo_Deduccion" ColumnName="Id_Tipo_Deduccion" />
+          <ScalarProperty Name="Nombre_Tipo_Deduccion" ColumnName="Nombre_Tipo_Deduccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REGISTRO_TRANSACCIONSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.REGISTRO_TRANSACCION)">
+        <MappingFragment StoreEntitySet="REGISTRO_TRANSACCIONSet">
+          <ScalarProperty Name="Id_Transaccion_Ingreso" ColumnName="Id_Transaccion_Ingreso" />
+          <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
+          <ScalarProperty Name="Id_Tipo_Ingreso" ColumnName="Id_Tipo_Ingreso" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_DE_INGRESOSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.TIPO_DE_INGRESO)">
+        <MappingFragment StoreEntitySet="TIPO_DE_INGRESOSet">
+          <ScalarProperty Name="Id_Tipo_Ingreso" ColumnName="Id_Tipo_Ingreso" />
+          <ScalarProperty Name="Nombre_Tipo_Deduccion" ColumnName="Nombre_Tipo_Deduccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEPARTAMENTOSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.DEPARTAMENTO)">
+        <MappingFragment StoreEntitySet="DEPARTAMENTOSet">
+          <ScalarProperty Name="Id_Departamento" ColumnName="Id_Departamento" />
+          <ScalarProperty Name="Nombre_Departamento" ColumnName="Nombre_Departamento" />
+          <ScalarProperty Name="Ubicacion_Fiscal_Departa" ColumnName="Ubicacion_Fiscal_Departa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMPLEADOSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.EMPLEADO)">
+        <MappingFragment StoreEntitySet="EMPLEADOSet">
+          <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
+          <ScalarProperty Name="Cod_Empleado" ColumnName="Cod_Empleado" />
+          <ScalarProperty Name="Nombre_Empleado" ColumnName="Nombre_Empleado" />
+          <ScalarProperty Name="Id_Departamento" ColumnName="Id_Departamento" />
+          <ScalarProperty Name="Id_Puesto" ColumnName="Id_Puesto" />
+          <ScalarProperty Name="Salario_Mensual_Emplea" ColumnName="Salario_Mensual_Emplea" />
+          <ScalarProperty Name="Cedula_Empleado" ColumnName="Cedula_Empleado" />
+          <ScalarProperty Name="Responsable_Area" ColumnName="Responsable_Area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION" TypeName="Model1.EMPLEADOREGISTRO_TRANSACCIN_DEDUCCION" StoreEntitySet="REGISTRO_TRANSACCIN_DEDUCCIONSet">
+      <EndProperty Name="EMPLEADO">
+        <ScalarProperty Name="Id_Empleado" ColumnName="EMPLEADO_Id_Empleado" />
+      </EndProperty>
+      <EndProperty Name="REGISTRO_TRANSACCIN_DEDUCCION">
+        <ScalarProperty Name="Id_Transaccion_Deduccion" ColumnName="Id_Transaccion_Deduccion" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DEPARTAMENTOEMPLEADO" TypeName="Model1.DEPARTAMENTOEMPLEADO" StoreEntitySet="EMPLEADOSet">
+      <EndProperty Name="DEPARTAMENTO">
+        <ScalarProperty Name="Id_Departamento" ColumnName="DEPARTAMENTO_Id_Departamento" />
+      </EndProperty>
+      <EndProperty Name="EMPLEADO">
+        <ScalarProperty Name="Id_Empleado" ColumnName="Id_Empleado" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
