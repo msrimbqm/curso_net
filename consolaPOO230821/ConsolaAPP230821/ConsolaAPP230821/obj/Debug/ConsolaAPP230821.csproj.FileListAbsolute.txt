@@ -1,0 +1,7 @@
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\obj\Debug\ConsolaAPP230821.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\obj\Debug\ConsolaAPP230821.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\bin\Debug\ConsolaAPP230821.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\bin\Debug\ConsolaAPP230821.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\bin\Debug\ConsolaAPP230821.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\obj\Debug\ConsolaAPP230821.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\consolaPOO230821\ConsolaAPP230821\ConsolaAPP230821\obj\Debug\ConsolaAPP230821.pdb
