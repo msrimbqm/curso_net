@@ -185,9 +185,10 @@ namespace Examen250821
         {
             // filtra el grid por el nombre busqeda contenida en campo de texto, no puede se vacio
 
-            if (existe(txtBuscar.Text) && (txtBuscar.Text!=""))
+            if (txtBuscar.Text!="")
             {
-                              
+
+                
 
                 var x = from p in bsa.PRODUCTOS where p.NombreProducto.Contains(txtBuscar.Text) select p;
                                

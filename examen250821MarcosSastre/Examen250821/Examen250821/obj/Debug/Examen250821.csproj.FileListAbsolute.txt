@@ -8,3 +8,13 @@ C:\Users\Tarde\Desktop\examen250821MarcosSastre\Examen250821\Examen250821\bin\De
 C:\Users\Tarde\Desktop\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.exe
 C:\Users\Tarde\Desktop\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.pdb
 C:\Users\Tarde\Desktop\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\bin\Debug\Examen250821.exe.config
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\bin\Debug\Examen250821.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\bin\Debug\Examen250821.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.Form1.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.Properties.Resources.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.csproj.GenerateResource.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.csproj.CoreCompileInputs.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.exe
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\examen250821MarcosSastre\Examen250821\Examen250821\obj\Debug\Examen250821.pdb
