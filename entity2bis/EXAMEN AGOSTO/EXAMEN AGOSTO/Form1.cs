@@ -37,6 +37,9 @@ namespace EXAMEN_AGOSTO
 
         private void btagregar_Click(object sender, EventArgs e)
         {
+            
+            
+            // usar try, usar cach para sacar los if de los que falla o dar error generiCo OJOJOJOJO 
             Clientes Misclientes = new Clientes()
 
             {
@@ -66,15 +69,24 @@ namespace EXAMEN_AGOSTO
             string TextoDNI = txtDNI.Text;
 
             // con lambsa tengo qu estudiar hacerlo tipo funcionamiento like de sql 
-            var BuscaCliente = ClientesEntity.Clientes.Where(x => x.DNI == TextoDNI).Single();
+            try
+            {
+                var BuscaCliente = ClientesEntity.Clientes.Where(x => x.DNI == TextoDNI).Single();
 
 
-            txtNombres.Text = BuscaCliente.Nombre;
-            txtApellidos.Text = BuscaCliente.Apellidos;
-            txtTelefono.Text = BuscaCliente.Telefono;
-            txtEmail.Text = BuscaCliente.Email;
-            cbEstadocivil.Text = BuscaCliente.EstadoCivil;
-            dateTimePicker1.Text = BuscaCliente.FechaNacimiento.ToString();
+                txtNombres.Text = BuscaCliente.Nombre;
+                txtApellidos.Text = BuscaCliente.Apellidos;
+                txtTelefono.Text = BuscaCliente.Telefono;
+                txtEmail.Text = BuscaCliente.Email;
+                cbEstadocivil.Text = BuscaCliente.EstadoCivil;
+                dateTimePicker1.Text = BuscaCliente.FechaNacimiento.ToString();
+            }
+
+            catch
+            {
+                //MessageBox.Show("ERROR NO EXISTE DNI O NO HAY ACCESO A BD");
+
+            }
 
         }
 
