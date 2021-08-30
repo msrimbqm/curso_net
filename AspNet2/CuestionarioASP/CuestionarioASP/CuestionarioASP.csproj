@@ -67,12 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccesoPermitido.aspx" />
     <Content Include="css\estilos.css" />
     <Content Include="default.aspx" />
     <Content Include="img\vacaypollo.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccesoPermitido.aspx.cs">
+      <DependentUpon>AccesoPermitido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccesoPermitido.aspx.designer.cs">
+      <DependentUpon>AccesoPermitido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

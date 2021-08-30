@@ -25,6 +25,14 @@ namespace CuestionarioASP
 
             Label1.Text = "El Numero de aciertos es: " + Aciertos.ToString();
             Aciertos = 0;
+            if (IsValid) Response.Redirect("AccesoPermitido.aspx");
+
+            
+            {
+
+
+            
+            }
 
 
         }

@@ -61,24 +61,42 @@
 
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Rellene el cuadro de texto" ControlToValidate="TextBox1">
 
-                Debe introducir algo en este cuadro
+                     Debe introducir algo en este cuadro
 
                 </asp:RequiredFieldValidator>
 
+                <h3> INTRUDUCE VALORES ENTRES 1 Y 99</h3>
+               <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 
+                <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="Error de rango" Text="El valor no esta rango permito" ControlToValidate="TextBox2" MaximumValue="99" MinimumValue="0" Type="Integer">
+
+                    Rango no permitido
+
+                </asp:RangeValidator>
+
+
+            <h3> EJEMPLO COMPARE VALIDATOR DEBEN SER IGUALES </h3>
+                Contraseña
+               <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
+            </br>
+                  Repita contraseña         
+                <asp:TextBox ID="TextBox4" runat="server" TextMode="Password"></asp:TextBox>                                  
             </br>
 
+             <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="No iguales" Text="No coinciden" ControlToCompare="TextBox3" ControlToValidate="TextBox4"></asp:CompareValidator>
 
+
+            </br></br>
 
                  <asp:Button ID="Button1" runat="server" Text="RESULTADO" OnClick="Button1_Click" />
-
-
 
         <br />
             
         </div>
 
-        </br></br>
+        </br>
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+        </br>
         
                 
 
