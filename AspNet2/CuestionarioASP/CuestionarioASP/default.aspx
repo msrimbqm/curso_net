@@ -56,13 +56,31 @@
                 </br>
                  <asp:RadioButton ID="RadioButton9" runat="server" GroupName="C" Text="Depende del cocinero" />
                 </br>
-        <br />
+                
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Rellene el cuadro de texto" ControlToValidate="TextBox1">
+
+                Debe introducir algo en este cuadro
+
+                </asp:RequiredFieldValidator>
+
+
+            </br>
+
+
+
+                 <asp:Button ID="Button1" runat="server" Text="RESULTADO" OnClick="Button1_Click" />
+
+
+
+        <br />
+            
         </div>
 
         </br></br>
         
-                <asp:Button ID="Button1" runat="server" Text="RESULTADO" OnClick="Button1_Click" />
+                
 
                 
 
@@ -72,6 +90,7 @@
 
         <br />
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
     </form>
        
 
