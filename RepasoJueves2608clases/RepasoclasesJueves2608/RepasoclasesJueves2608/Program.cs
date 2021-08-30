@@ -12,11 +12,9 @@ namespace RepasoclasesJueves2608
     {
         static void Main(string[] args)
         {
-            
-
-            
           
             string op;
+            
             int i1;
             string i2, i3,i6;
             int i4;
@@ -27,10 +25,6 @@ namespace RepasoclasesJueves2608
             Coche MyCoche = new Coche();
             Moto MyMoto = new Moto();
             
-
-
-
-
 
             do
             {
@@ -48,7 +42,7 @@ namespace RepasoclasesJueves2608
                 {
 
                     case "1":
-                        // crear coche con el contructor
+                        // crear coche con el contructor pillo valores
                         Console.Clear();
                         Console.WriteLine("Introduzca ID coche:");
                         i1 = int.Parse(Console.ReadLine());
@@ -66,7 +60,7 @@ namespace RepasoclasesJueves2608
                             abg = true;
                         else
                             abg = false;
-                        // ya tengo tengo los datos, creo el objeto
+                        // ya tengo tengo los datos, creo el objeto con constructor
 
                         MyCoche = new Coche(i1, i2, i3, i4, i5, abg);
 
@@ -107,7 +101,7 @@ namespace RepasoclasesJueves2608
                     case "3":
                         // listar datos de un coche
                         MyCoche.listar();
-                        Console.ReadLine();
+                    
 
                         break;
 
@@ -116,22 +110,13 @@ namespace RepasoclasesJueves2608
                         // listar datos de una moto
 
                         MyMoto.listar();
-                        Console.ReadLine();
-
-
+                        
                         break;
 
                 }
 
 
-
             } while (op != "5");
-
-
-
-
-
-
 
         }
     }

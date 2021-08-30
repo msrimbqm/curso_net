@@ -4,3 +4,4 @@ C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\RepasoJueves2608clases\Rep
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\RepasoJueves2608clases\RepasoclasesJueves2608\RepasoclasesJueves2608\obj\Debug\RepasoclasesJueves2608.csproj.CoreCompileInputs.cache
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\RepasoJueves2608clases\RepasoclasesJueves2608\RepasoclasesJueves2608\obj\Debug\RepasoclasesJueves2608.exe
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\RepasoJueves2608clases\RepasoclasesJueves2608\RepasoclasesJueves2608\obj\Debug\RepasoclasesJueves2608.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\RepasoJueves2608clases\RepasoclasesJueves2608\RepasoclasesJueves2608\obj\Debug\RepasoclasesJueves2608.csproj.AssemblyReference.cache
