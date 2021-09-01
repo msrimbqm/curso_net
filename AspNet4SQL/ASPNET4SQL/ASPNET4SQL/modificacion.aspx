@@ -20,11 +20,11 @@
             <br />
             </br>
              <asp:Label ID="Label2" runat="server" Text="Clave:"></asp:Label>
-             <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
+             <asp:TextBox ID="txtClave" runat="server" TextMode="Password"></asp:TextBox>
          
             </br>
              <asp:Label ID="Label3" runat="server" Text="Mail:"></asp:Label>
-             <asp:TextBox ID="txtMail" runat="server"></asp:TextBox>
+             <asp:TextBox ID="txtMail" runat="server" TextMode="Email"></asp:TextBox>
             <br />
             </br>
             <asp:Button ID="btnModi" runat="server" OnClick="btnModi_Click" Text="Modificar" />

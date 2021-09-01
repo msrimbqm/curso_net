@@ -14,14 +14,16 @@
             
             <asp:Label ID="Label1" runat="server" Text="Nombre:"></asp:Label>
             <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Rellene el cuadro de texto" ControlToValidate="txtNombre">
+             </asp:RequiredFieldValidator>
             </br>
 
             <asp:Label ID="Label2" runat="server" Text="Clave:"></asp:Label>
-             <asp:TextBox ID="txtClave" runat="server"></asp:TextBox>
+             <asp:TextBox ID="txtClave" runat="server" TextMode="Password"></asp:TextBox>
          
             </br>
              <asp:Label ID="Label3" runat="server" Text="Mail:"></asp:Label>
-             <asp:TextBox ID="txtMail" runat="server"></asp:TextBox>
+             <asp:TextBox ID="txtMail" runat="server" TextMode="Email"></asp:TextBox>
             </br>
             </br>
 
