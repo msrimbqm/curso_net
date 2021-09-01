@@ -63,4 +63,8 @@
 }
 
 
-
+.flexbox
+{
+    display: grid;
+    place-items: center;
+}
