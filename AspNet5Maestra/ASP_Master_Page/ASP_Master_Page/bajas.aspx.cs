@@ -26,19 +26,28 @@ namespace ASP_Master_Page
 
             string s = System.Configuration.ConfigurationManager.ConnectionStrings["simulacroSQLConnectionString"].ToString();
 
-            SqlConnection conexion = new SqlConnection(s);
-            conexion.Open();
-            SqlCommand comando = new SqlCommand("delete from cliente where id ='" + DropDownList1.Text+ "'", conexion);
-            int cantidad = comando.ExecuteNonQuery();
 
-            GridView1.DataBind();
+            try:
+            {
+                SqlConnection conexion = new SqlConnection(s);
+                conexion.Open();
+                SqlCommand comando = new SqlCommand("delete from cliente where id ='" + DropDownList1.Text + "'", conexion);
+                int cantidad = comando.ExecuteNonQuery();
 
-            
-            if (cantidad == 1) this.Resultado.Text = "Se  borro el cliente";
-            else
-                this.Resultado.Text = "No existe un usuario con ese Id";
-            
-            conexion.Close();
+                GridView1.DataBind();
+
+
+                if (cantidad == 1) this.Resultado.Text = "Se  borro el cliente";
+                else
+                    this.Resultado.Text = "No existe un usuario con ese Id";
+
+                conexion.Close();
+            }
+            catch:
+            {
+                Resultado.Text = "ERROR";
+
+            }
 
 
 

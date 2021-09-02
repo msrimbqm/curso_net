@@ -79,3 +79,6 @@ C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\code
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\codefirst1\obj\Debug\codefirst1.csproj.CopyComplete
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\codefirst1\obj\Debug\codefirst1.dll
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\codefirst1\obj\Debug\codefirst1.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\codefirst1\obj\Debug\codefirst1.csproj.AssemblyReference.cache
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\codefirst1\obj\Debug\codefirst1.Migrations.Initial.resources
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\CodeFirst1\codefirst1\codefirst1\obj\Debug\codefirst1.csproj.GenerateResource.cache

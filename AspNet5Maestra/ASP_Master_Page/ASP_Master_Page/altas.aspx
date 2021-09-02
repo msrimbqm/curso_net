@@ -4,7 +4,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
  
-    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <link href="css/StyleSheet1.css" rel="stylesheet"/>
     
 
 
