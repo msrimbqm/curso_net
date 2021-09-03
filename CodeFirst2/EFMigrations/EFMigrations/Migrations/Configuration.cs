@@ -28,18 +28,23 @@ namespace EFMigrations.Migrations
             //    );
             //
 
-            context.Empleados.AddOrUpdate(z => z.Nombre, new Empleado
-            {
-                IdEmpleado = 1,
-                Nombre = "David",
-                Apellidos = "Fernandez Huertas",
-                Direccion = "Calle Atlantico de Madrid",
-                Email = "David@mail.com"
-            });
+            CreateTable(
+               "dbo.Empleado",
+               c => new
+               {
+                   IdEmpleado = c.Int(nullable: false, identity: true),
+                   Nombre = c.String(),
+                   Apellido = c.String(),
+                   Direccion = c.String(),
+                   Email = c.String(),
+               })
+               .PrimaryKey(t => t.IdEmpleado);
+
+        }
 
 
 
-            }
+    }
 
             
 
