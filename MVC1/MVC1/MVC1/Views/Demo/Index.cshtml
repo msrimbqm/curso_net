@@ -1,14 +1,50 @@
 ﻿
-@{
+<!-- para un libro
+arroba model MVC1.Models.libro-->
+
+<!-- para lista de libros-->
+
+    @model IEnumerable<MVC1.Models.libro>
+        
+
+<!-- arroba{
     ViewBag.Title = "Index";
 }
 
-
+-->
 
 <!-- esto trae desde el contraldor una especie de variable definida en el controlador-->
 <h2>Index</h2>@ViewBag.Mensaje
 
-@{ 
+<!-- visulizar un libro solo recibido
+El titulo del libro es:<strong>arroba Model.Titulo</strong>-->
+
+<!-- visualizar una lista de libros recibidas-->
+
+<ul>
+
+    @foreach (var libro in Model)
+    {
+        <li> @libro.Titulo (@libro.TipoLibro)</li>
+    }
+</ul>
+
+
+
+    }
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+@{
     string titulo = "pagina principal";
     int dia = DateTime.Now.Day;
     int mes = DateTime.Now.Month;
@@ -21,19 +57,20 @@
     { cadena = "Estamos en la primera parte del mes"; }
 
 }
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width" />
-        <title> Indez</title>
-    </head>
-    
-    <body>
-        <h1>titulos</h1>
-        <p>Fecha:@dia/@mes/@año</p>
-        <p>@cadena</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> Indez</title>
+</head>
 
-    </body>
+<body>
+    <h1>titulos</h1>
+    <p>Fecha:@dia/@mes/@año</p>
+    <p>@cadena</p>
+
+</body>
+
 
 </html>
 
