@@ -79,7 +79,6 @@ C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\bin\es\Syst
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\bin\es\System.Web.WebPages.resources.dll
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.csproj.AssemblyReference.cache
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.csproj.CoreCompileInputs.cache
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.csproj.CopyComplete
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.dll

@@ -34,7 +34,7 @@ namespace MVC1.Controllers
         // GET: Biblioteca/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(mibiblioteca.ObtenerPorIsbn(id.ToString()));
         }
 
         // GET: Biblioteca/Create
@@ -53,12 +53,12 @@ namespace MVC1.Controllers
                 mibiblioteca.Libros.Add(new libro
                 {
                     Isbn = (mibiblioteca.Libros.Count() + 1).ToString(),
-                    Titulo = collection["Titulo"], TipoLibro = collection["Categoria"]
+                    Titulo = collection["Titulo"], 
+                    TipoLibro = collection["TipoLibro"]
+                                        
                     });
 
                
-
-
                 return RedirectToAction("Index");
             }
             catch
@@ -70,7 +70,8 @@ namespace MVC1.Controllers
         // GET: Biblioteca/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+
+            return View(mibiblioteca.ObtenerPorIsbn(id.ToString()));
         }
 
         // POST: Biblioteca/Edit/5
@@ -80,6 +81,20 @@ namespace MVC1.Controllers
             try
             {
                 // TODO: Add update logic here
+
+                foreach (libro l in mibiblioteca.Libros)
+                {
+                    if (l.Isbn == id.ToString())
+                    {
+                        l.Titulo = collection["Titulo"];
+                        l.TipoLibro = collection["TipoLibro"];
+
+                    }
+
+                }
+
+
+
 
                 return RedirectToAction("Index");
             }
@@ -92,7 +107,8 @@ namespace MVC1.Controllers
         // GET: Biblioteca/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+          
+            return View(mibiblioteca.ObtenerPorIsbn(id.ToString()));
         }
 
         // POST: Biblioteca/Delete/5
@@ -102,6 +118,11 @@ namespace MVC1.Controllers
             try
             {
                 // TODO: Add delete logic here
+                foreach(libro l in mibiblioteca.Libros)
+                {
+                    if (l.Isbn == id.ToString()) mibiblioteca.Libros.Remove(l);
+
+                }
 
                 return RedirectToAction("Index");
             }
