@@ -5,17 +5,30 @@ using System.Web;
 using System.Web.Mvc;
 using MVC1.Models;
 
+
+
+
+
+
+
+
+
 namespace MVC1.Controllers
 {
 
+   
+       
+
+
+
     public class BibliotecaController : Controller
     {
-        biblioteca miBiblioteca = new biblioteca();
+        static biblioteca mibiblioteca = new biblioteca();
 
         // GET: Biblioteca
         public ActionResult Index()
         {
-            return View(miBiblioteca.Libros.ToList());
+            return View(mibiblioteca.Libros.ToList());
         }
 
         // GET: Biblioteca/Details/5
@@ -37,6 +50,14 @@ namespace MVC1.Controllers
             try
             {
                 // TODO: Add insert logic here
+                mibiblioteca.Libros.Add(new libro
+                {
+                    Isbn = (mibiblioteca.Libros.Count() + 1).ToString(),
+                    Titulo = collection["Titulo"], TipoLibro = collection["Categoria"]
+                    });
+
+               
+
 
                 return RedirectToAction("Index");
             }

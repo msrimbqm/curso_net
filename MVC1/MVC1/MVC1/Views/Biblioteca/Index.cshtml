@@ -1,27 +1,50 @@
-﻿@model IEnumerable<MVC1.Models.biblioteca>
+﻿@model IEnumerable<MVC1.Models.libro>
+
+
+
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>View de Bibliotea</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-        <th></th>
+        <th>  Isbn </th>
+        <th>  Titulo </th>
+        <th>  Titulo Libro </th>
+
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @item.Isbn
+    
+    </td>
+
+    <td>
+        @item.Titulo
+       
+    </td>
+    <td>
+        @item.TipoLibro
+       
+    </td>
+
+    <td>
+        
+        @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+        @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+    </td>
+
+</tr>
+    }
 
 </table>

@@ -20,5 +20,27 @@ namespace MVC1.Models
             };
         }
 
+        public int NumeroLibros()
+        {
+
+            return Libros.Count();
+           
+        }
+
+        public libro ObtenerPorIsbn (string isbn)
+        {
+            foreach (var libroBuscar in Libros)
+            {
+                if (libroBuscar.Isbn == isbn)
+                {
+                    return libroBuscar;
+                }
+             }
+            return null;
+         }
+
+
+
+
     }
 }
