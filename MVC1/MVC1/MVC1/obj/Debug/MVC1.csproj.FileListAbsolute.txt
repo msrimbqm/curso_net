@@ -83,3 +83,4 @@ C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\M
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.csproj.CopyComplete
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.dll
 C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.pdb
+C:\Users\Tarde\Desktop\CURSONETGIT\msrimbqm\curso_net\MVC1\MVC1\MVC1\obj\Debug\MVC1.csproj.AssemblyReference.cache

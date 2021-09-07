@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Descuento";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name"viewport" content="width=device-width" />
+    <title>
+        Calcular Descuento
+    </title>
+
+</head>
+
+
+<body>
+    <h2>Calcula Descuento</h2>
+    <div>
+        <form method="post">
+            Precio: <input type="text" name="txtn1" value="@ViewBag.n1" />
+             Pagado: <input type="text" name="txtn2" value="@ViewBag.n2" />
+
+            <h3>  RESULTADO: </h3>
+
+
+            Descuento en % aplicado: <input type="text" name="txtdto" value="@ViewBag.r1" />
+            
+
+            <input type="submit" value="calcular" />
+        </form>
+    </div>
+</body>
+</html>
+
+

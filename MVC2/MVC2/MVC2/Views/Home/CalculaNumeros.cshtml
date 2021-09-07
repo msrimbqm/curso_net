@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "CalculaNumeros";
+    Layout = null;
+
+}
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name"viewport" content="width=device-width" />
+    <title>
+        Calcular Edad
+    </title>
+
+</head>
+
+
+<body>
+    <h2>CalculaNumeros</h2>
+    <div>
+        <form method="post">
+            Numero1 <input type="text" name="txtn1" value="@ViewBag.n1" />
+            Numero2 <input type="text" name="txtn2" value="@ViewBag.n2" />
+
+            <h3>  RESULTADO </h3>
+                       
+
+            Suma <input type="text" name="txtsuma" value="@ViewBag.r1" />
+            Resta<input type="text" name="txtresta" value="@ViewBag.r2" />
+            Multiplicacion <input type="text" name="txtmulti" value="@ViewBag.r3" />
+            Division<input type="text" name="txtdivi" value="@ViewBag.r4" />
+
+
+            <input type="submit" value="calcular" />
+        </form>
+    </div>
+    </body>
+</html>
+
+
+
+
+

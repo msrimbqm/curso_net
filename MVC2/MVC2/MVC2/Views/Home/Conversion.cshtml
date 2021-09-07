@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Conversion";
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name"viewport" content="width=device-width" />
+    <title>
+        Calcular grados y pulgadas
+    </title>
+
+</head>
+
+
+<body>
+    <h2>Calcula Grados a Fahrenheid y Pulgadas a  MM </h2>
+    <div>
+        <form method="post">
+            Centrigrados: <input type="text" name="txtn1" value="@ViewBag.n1" />
+
+            <h3>  RESULTADO </h3>
+
+
+            Fahrenheit :<input type="text" name="txtfah" value="@ViewBag.r1" />
+            
+            <h2>-----------------------</h2>
+            
+            Pulgadas:: <input type="text" name="txtn2" value="@ViewBag.n1" />
+
+            <h3>  RESULTADO </h3>
+
+
+           Milimimetros :<input type="text" name="txtmm" value="@ViewBag.r2" />
+
+
+            <input type="submit" value="calcular" />
+        </form>
+    </div>
+</body>
+</html>
+
+

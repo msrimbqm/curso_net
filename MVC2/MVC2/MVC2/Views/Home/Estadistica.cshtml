@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Estadistica";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name"viewport" content="width=device-width" />
+    <title>
+        Calcular Porcentajes  
+    </title>
+
+</head>
+
+
+<body>
+    <h2>Calcula Porcentajes</h2>
+    <div>
+        <form method="post">
+            Suspensos: <input type="text" name="txtsuspensos" value="@ViewBag.n1" />
+            Aprobados:<input type="text" name="txtaprobados" value="@ViewBag.n2" />
+            Notables:<input type="text" name="txtnotables" value="@ViewBag.n3" />
+            Sobresalientes:<input type="text" name="txtsobresalientes" value="@ViewBag.n4" />
+
+
+
+
+
+            <h3>--------------  RESULTADO------------------------ </h3>
+
+
+            % superaron: <input type="text" name="txtsuperaron" value="@ViewBag.r1" />
+            % suspensos:<input type="text" name="txtsuspensos" value="@ViewBag.r2" />
+            % aprobaron: <input type="text" name=txtaprobaron" value="@ViewBag.r3" />
+            % notables<input type="text" name="txtnotables" value="@ViewBag.r4" />
+            % sobresalientes<input type="text" name="txtsobresalientes" value="@ViewBag.r5" />
+
+
+
+            <input type="submit" value="calcular" />
+        </form>
+    </div>
+</body>
+</html>
+
+
